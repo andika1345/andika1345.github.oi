@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pemesanan Kopi Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>belikopi</h1>
+    <p>Pemesanan Kopi Online</p>
+  </header>
+
+  <div class="container">
+    <form id="orderForm">
+      <label for="jenis">Pilih Jenis Kopi:</label>
+      <select id="jenis" required>
+        <option value="">--Pilih--</option>
+        <option value="20000">Espresso - Rp20.000</option>
+        <option value="25000">Cappuccino - Rp25.000</option>
+        <option value="30000">Latte - Rp30.000</option>
+        <option value="35000">Mocha - Rp35.000</option>
+        <option value="15000"> matcha-RP15.000</option>
+      </select>
+
+      <label for="jumlah">Jumlah Gelas:</label>
+      <input type="number" id="jumlah" min="1" value="1" required>
+
+      <label for="nama">Nama Pemesan:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
